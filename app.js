@@ -22,8 +22,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(session({secret: process.env.SESSIONSECRET}));
+app.use(session({secret: process.env.
 
+// Spotify setup
 var SpotifyWebApi = require('spotify-web-api-node');
 app.locals.spotifyApi = new SpotifyWebApi({
   clientId: process.env.SPOTIFYCLIENTID,
