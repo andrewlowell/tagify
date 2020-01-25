@@ -12,7 +12,7 @@ var callbackRouter = require('./routes/callback');
 
 var app = express();
 
-// view engine setup :) :) :)
+// view engine setup :) :) :) :)
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
